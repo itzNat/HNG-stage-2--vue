@@ -28,19 +28,15 @@
             Streamline Your
             <span class="gradient-text"> Ticket Management</span>
           </h1>
-          
+
           <p class="hero-description">
-            The ultimate solution for managing support tickets across multiple teams. 
-            Fast, intuitive, and beautifully designed to make your workflow seamless.
+            The ultimate solution for managing support tickets across multiple teams. Fast,
+            intuitive, and beautifully designed to make your workflow seamless.
           </p>
 
           <div class="hero-actions">
-            <RouterLink to="/auth/signup" class="btn btn-primary">
-              Start Free Trial
-            </RouterLink>
-            <RouterLink to="/auth/login" class="btn btn-secondary">
-              Login to Dashboard
-            </RouterLink>
+            <RouterLink to="/auth/signup" class="btn btn-primary"> Start Free Trial </RouterLink>
+            <RouterLink to="/auth/login" class="btn btn-secondary"> Login to Dashboard </RouterLink>
           </div>
         </div>
 
@@ -86,9 +82,9 @@
       <!-- Wavy Background -->
       <div class="wavy-background">
         <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
-          <path 
-            fill="var(--primary-color)" 
-            fill-opacity="0.1" 
+          <path
+            fill="var(--primary-color)"
+            fill-opacity="0.1"
             d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,192C672,181,768,139,864,138.7C960,139,1056,181,1152,181.3C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
           ></path>
         </svg>
@@ -98,16 +94,10 @@
     <!-- Features Section -->
     <section class="features-section">
       <div class="container">
-        <h2 class="section-title">
-          Why Choose TicketFlow?
-        </h2>
-        
+        <h2 class="section-title">Why Choose TicketFlow?</h2>
+
         <div class="features-grid">
-          <div
-            v-for="feature in features"
-            :key="feature.title"
-            class="feature-card glass-card"
-          >
+          <div v-for="feature in features" :key="feature.title" class="feature-card glass-card">
             <div class="feature-icon">{{ feature.icon }}</div>
             <h3>{{ feature.title }}</h3>
             <p>{{ feature.description }}</p>
@@ -130,25 +120,25 @@ import { ref } from 'vue'
 
 const features = ref([
   {
-    icon: "⚡",
-    title: "Lightning Fast",
-    description: "Built for speed with real-time updates and instant search capabilities."
+    icon: '⚡',
+    title: 'Lightning Fast',
+    description: 'Built for speed with real-time updates and instant search capabilities.',
   },
   {
-    icon: "🎨",
-    title: "Beautiful UI",
-    description: "Carefully crafted interface that's both beautiful and intuitive to use."
+    icon: '🎨',
+    title: 'Beautiful UI',
+    description: "Carefully crafted interface that's both beautiful and intuitive to use.",
   },
   {
-    icon: "🔒",
-    title: "Secure & Reliable",
-    description: "Enterprise-grade security with 99.9% uptime guarantee."
+    icon: '🔒',
+    title: 'Secure & Reliable',
+    description: 'Enterprise-grade security with 99.9% uptime guarantee.',
   },
   {
-    icon: "📱",
-    title: "Fully Responsive",
-    description: "Perfect experience on all devices, from mobile to desktop."
-  }
+    icon: '📱',
+    title: 'Fully Responsive',
+    description: 'Perfect experience on all devices, from mobile to desktop.',
+  },
 ])
 </script>
 
@@ -209,18 +199,33 @@ const features = ref([
 }
 
 @keyframes float1 {
-  0%, 100% { transform: translateY(0) rotate(0); }
-  50% { transform: translateY(-20px) rotate(5deg); }
+  0%,
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
 }
 
 @keyframes float2 {
-  0%, 100% { transform: translateY(0) rotate(0); }
-  50% { transform: translateY(30px) rotate(-8deg); }
+  0%,
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(30px) rotate(-8deg);
+  }
 }
 
 @keyframes float3 {
-  0%, 100% { transform: translateY(0) scale(1); }
-  50% { transform: translateY(-15px) scale(1.1); }
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-15px) scale(1.1);
+  }
 }
 
 /* Navigation */
@@ -319,8 +324,13 @@ const features = ref([
 }
 
 @keyframes gradient-shift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 .hero-description {
@@ -498,20 +508,20 @@ const features = ref([
     grid-template-columns: 1fr;
     text-align: center;
   }
-  
+
   .hero-title {
     font-size: 2.5rem;
   }
-  
+
   .landing-nav {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .hero-actions {
     justify-content: center;
   }
-  
+
   .features-grid {
     grid-template-columns: 1fr;
   }

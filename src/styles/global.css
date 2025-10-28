@@ -1,6 +1,6 @@
 /* src/styles/global.css */
 :root {
-  --primary-color: #667eea;
+  --primary-color: #1940f0;
   --secondary-color: #764ba2;
   --success-color: #2ecc71;
   --warning-color: #f39c12;
@@ -33,8 +33,9 @@ a {
 
 ul {
   list-style: none;
-;
+  ;
 }
+
 /* Utility classes */
 .glass-card {
   background: rgba(255, 255, 255, 0.1);
@@ -160,8 +161,13 @@ ul {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Responsive */
@@ -171,12 +177,12 @@ ul {
     right: 1rem;
     left: 1rem;
   }
-  
+
   .toast {
     min-width: auto;
     max-width: none;
   }
-  
+
   .btn {
     padding: 0.875rem 1.5rem;
   }
@@ -185,20 +191,31 @@ ul {
 /* Add to src/styles/global.css */
 
 /* Hover animations */
-.btn-primary, .btn-secondary, .create-ticket-btn, .auth-btn {
+.btn-primary,
+.btn-secondary,
+.create-ticket-btn,
+.auth-btn {
   transition: all 0.3s ease;
 }
 
-.btn-primary:hover, .create-ticket-btn:hover, .auth-btn:hover {
+.btn-primary:hover,
+.create-ticket-btn:hover,
+.auth-btn:hover {
   transform: translateY(-2px);
 }
 
 /* Card hover effects */
-.glass-card, .stat-card, .ticket-card, .feature-card {
+.glass-card,
+.stat-card,
+.ticket-card,
+.feature-card {
   transition: all 0.3s ease;
 }
 
-.glass-card:hover, .stat-card:hover, .ticket-card:hover, .feature-card:hover {
+.glass-card:hover,
+.stat-card:hover,
+.ticket-card:hover,
+.feature-card:hover {
   transform: translateY(-5px);
 }
 
@@ -223,7 +240,10 @@ ul {
 }
 
 /* Focus states for accessibility */
-button:focus, input:focus, textarea:focus, select:focus {
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
   outline: 2px solid var(--primary-color);
   outline-offset: 2px;
 }
